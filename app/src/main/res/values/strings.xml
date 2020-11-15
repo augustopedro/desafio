@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RepoPopular</string>
+    <string name="repo_name">Nome Repositório</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in aliquam purus, et sagittis lorem. Integer elementum, sem at rutrum posuere, ex diam aliquet sapien, sit amet rhoncus ante nisl vitae arcu.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

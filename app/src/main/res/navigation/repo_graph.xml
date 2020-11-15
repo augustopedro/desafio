@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repo_graph"
+    app:startDestination="@id/repoListFragment">
+
+    <fragment
+        android:id="@+id/repoListFragment"
+        android:name="com.auzusto.repopopular.ui.RepoListFragment"
+        android:label="fragment_repo_list"
+        tools:layout="@layout/fragment_repo_list" >
+        <action
+            android:id="@+id/action_repoListFragment_to_pullListFragment"
+            app:destination="@id/pullListFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pullListFragment"
+        android:name="com.auzusto.repopopular.ui.PullListFragment"
+        android:label="fragment_pull_list"
+        tools:layout="@layout/fragment_pull_list">
+        <argument
+            android:name="login"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>

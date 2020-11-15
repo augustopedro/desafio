@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/textPullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_large"
+        android:layout_marginTop="@dimen/space_medium"
+        android:text="@string/repo_name"
+        android:textColor="@color/some_grey"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPullDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_medium"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/lorem_ipsum"
+        android:layout_marginEnd="@dimen/space_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textPullName"
+        app:layout_constraintTop_toBottomOf="@+id/textPullName" />
+
+    <ImageView
+        android:id="@+id/imagePullAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/space_medium"
+        android:layout_marginStart="@dimen/space_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/textPullLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/some_grey"
+        android:layout_marginStart="@dimen/space_small"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@+id/imagePullAvatar"
+        app:layout_constraintTop_toTopOf="@id/imagePullAvatar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/some_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/space_large"
+        android:layout_marginTop="@dimen/space_small"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
